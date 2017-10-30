@@ -6,6 +6,9 @@ $(function() {
 	  const fillDataWithSubmittedDate = fillData(datePickerValue)
 
 	  // read data
+	  if(typeof localStorage.FracFocusData === 'undefined') {
+		  localStorage.FracFocusData = JSON.stringify([])
+	  }
 	  localStorage.FracFocusData = JSON.stringify(
 		fillDataWithSubmittedDate(JSON.parse(localStorage.FracFocusData))
 	  )
