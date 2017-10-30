@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "FracFocusData",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://fracfocusdata.org/DisclosureSearch/Search.aspx"],
+      "js": ["jquery-3.2.1.min.js", "model.js", "content.js"]
+    }
+  ]
+}
